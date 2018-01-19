@@ -1,0 +1,13 @@
+/**index.wxss**/
+.top {
+  width: 100%;
+  height:200rpx;
+  background-color: red;
+}
+
+.bottom {
+  width: 100%;
+  height:500rpx;
+  background-color: blue;
+}
+

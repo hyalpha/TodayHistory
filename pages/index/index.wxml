@@ -1,0 +1,13 @@
+<!-- index.wxml -->
+<view style="width: 100%;height:100px;color:#67CDCD;font-size:44rpx;font-weight:bold;line-height:100px;text-align:center;">
+  {{dateOfToday}}
+</view>
+<view style="width:100%;height:1rpx;background-color:gray;"></view>
+<scroll-view style="width: 100%;height:{{scrollViewHeight}}px;" scroll-y>
+  <view wx:for="{{items}}" wx:for-item="item" wx:for-index="idx">
+    <view style="height:1rpx;background-color:gray;margin:0 20rpx;"></view>
+    <view style="height:100rpx;line-height:100rpx;padding-left:20rpx;text-overflow: ellipsis;white-space: nowrap; overflow: hidden;" bindtap='viewDetail' data-year="{{item.year}}" data-title="{{item.title}}">
+      {{item.year}} {{item.title}}
+    </view>
+  </view>
+</scroll-view>
